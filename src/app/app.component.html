@@ -1,10 +1,11 @@
 
-<restoX-header />
+<app-header />
 <main class="max-w-screen-lg gap-4 grid grid-cols-4 mx-auto w-full">
   <ul class="col-span-1 mt-4 grid gap-2" id="users">
-    @for (user of users; track $index) {
-      <app-user [user]="user" />
-    }
+<!--    @for (user of users; track $index) {-->
+<!--      <app-user [user]="user" />-->
+<!--    }-->
+    <app-user />
   </ul>
 
   <div class="col-span-3 "></div>

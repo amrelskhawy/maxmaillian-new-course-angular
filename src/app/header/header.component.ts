@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'restoX-header',
+  selector: 'app-header',
   templateUrl: './header.component.html',
-  styles: '',
+  styleUrls: ['./header.component.scss'],
   standalone: true
 })
 export class HeaderComponent { }

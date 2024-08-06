@@ -1,5 +1,9 @@
-<!-- User Component Markup -->
-  <button [id]="user.id" class="text-purple-200 items-center w-full gap-3 flex bg-purple-300/30 p-3 rounded-xl">
-    <img class="w-9 rounded-lg block" [src]="'assets/users/'+ user.avatar" alt="">
-    <span>{{user.name}}</span>
+<div>
+  <!-- User Component Markup -->
+  <button (click)="onSelectUser()" [id]="selectedUser().id"
+   >
+    <img  [src]="getImagePath()" [alt]="selectedUser().name">
+    <span>{{selectedUser().name}}</span>
   </button>
+
+</div> 
